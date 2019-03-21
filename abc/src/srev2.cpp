@@ -67,27 +67,7 @@ byte msg[28][28] = {{0x71, 0x19, 0x0e, 0x3f, 0xa5, 0xc9, 0x7e, 0x3f, 0xcb, 0x57,
 { 0x71, 0x19, 0x0e, 0x40, 0x1c, 0x0f, 0xde, 0x40, 0x45, 0x32, 0x40, 0x41, 0x2d, 0xe3, 0x5d, 0xc0, 0x37, 0x0d, 0xed, 0x3e, 0x08, 0x3e, 0xb6, 0xc0, 0x31, 0xf6, 0xe2, 0xf0 },// 26
 { 0x51, 0x19, 0x0e, 0x40, 0x3f, 0xe5, 0x16, 0x40, 0x42, 0x93, 0xc9, 0x41, 0x1a, 0x7e, 0x94, 0xc0, 0x36, 0xe7, 0xd3, 0x3e, 0x1a, 0x82, 0x01, 0xc0, 0x30, 0x2f, 0x87, 0x4 },// 27
 { 0x51, 0x19, 0x0e, 0x40, 0x54, 0xeb, 0xca, 0x40, 0x3c, 0xd5, 0xd1, 0x41, 0x0b, 0x3c, 0x24, 0xc0, 0x36, 0xdf, 0x03, 0x3e, 0x32, 0x6e, 0x03, 0xc0, 0x2e, 0x84, 0x69, 0xb9 }};// 28};//bad value
-//
-// int pt_msg(int row):
-// {
-//     while (a=row)
-//     {
-//         // Serial.print("\t one");
-//         Serial.println();
-//         for (int row = a; row; row++)
-//         {
-//             for (int col = 0; col < 28; col++)
-//             {
-//                 // msg[row][col], HEX;
-//                 // Serial.print(msg[a][col], HEX);
-//                 Serial.print("\t");
-//                 Serial.write(msg[a][col]);
-//             }
-//             Serial.println();
-//             goto start;
-//         }
-//     }
-// }
+
 int baudrate = 9600;
 int timedelay = 10000;
 
@@ -106,40 +86,36 @@ void setup()
         {
             while (a=1)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
         }
         else if(a == 2)
         {
             while (a=2)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -147,20 +123,18 @@ void setup()
         {
             while (a=3)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -168,20 +142,18 @@ void setup()
         {
             while (a=4)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -189,20 +161,18 @@ void setup()
         {
             while (a=5)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -210,20 +180,18 @@ void setup()
         {
             while (a=6)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -231,20 +199,18 @@ void setup()
         {
             while (a=7)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -252,20 +218,18 @@ void setup()
         {
             while (a=8)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -273,20 +237,18 @@ void setup()
         {
             while (a=9)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -294,20 +256,18 @@ void setup()
         {
             while (a=10)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -315,20 +275,18 @@ void setup()
         {
             while (a=11)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -337,20 +295,18 @@ void setup()
         {
             while (a=12)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -359,20 +315,18 @@ void setup()
         {
             while (a=13)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -381,20 +335,18 @@ void setup()
         {
             while (a=14)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -403,20 +355,18 @@ void setup()
         {
             while (a=15)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -425,20 +375,18 @@ void setup()
         {
             while (a=16)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -447,20 +395,18 @@ void setup()
         {
             while (a=17)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -469,20 +415,18 @@ void setup()
         {
             while (a=18)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -491,20 +435,18 @@ void setup()
         {
             while (a=19)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -513,20 +455,18 @@ void setup()
         {
             while (a=20)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -535,20 +475,18 @@ void setup()
         {
             while (a=21)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -557,20 +495,18 @@ void setup()
         {
             while (a=22)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -579,20 +515,18 @@ void setup()
         {
             while (a=23)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -601,20 +535,18 @@ void setup()
         {
             while (a=24)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -623,20 +555,18 @@ void setup()
         {
             while (a=25)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
@@ -644,20 +574,18 @@ void setup()
         {
             while (a=26)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -666,20 +594,18 @@ void setup()
         {
             while (a=27)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
 
@@ -688,20 +614,18 @@ void setup()
         {
             while (a=28)
             {
-                // Serial.print("\t one");
                 Serial.println();
                 for (int row = a; row; row++)
                 {
                     for (int col = 0; col < 28; col++)
                     {
-                        // msg[row][col], HEX;
                         // Serial.print(msg[a][col], HEX);
                         Serial.print("\t");
                         Serial.write(msg[a][col]);
                     }
                     Serial.println();
-                    goto start;
-                }
+                    goto start; //comment this for single printing
+                } // goto start; uncomment this for repeated printing
             }
 
         }
